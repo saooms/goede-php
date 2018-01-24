@@ -1,0 +1,47 @@
+body {
+	background-size: 100%;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+p {
+	font-size: 100px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-family: 'Rochester', cursive;
+}
+
+#plane {
+	position: absolute;
+	z-index: -1;
+	width: 200px;
+	top: 10%;
+	right: -200px;
+	animation: plane 7s;
+}
+
+#UFO {
+	position: absolute;
+	width: 100px;
+	top: -100px;
+	left: 50%;
+	margin-left: -50px;
+	animation: UFO 5s;
+}
+
+@keyframes plane		 {
+	0% {right: -200px;}
+	50% {top: 60%;}
+	100% {right: 150%;}
+}
+
+@keyframes UFO {
+	0% {top: -100px; left: 50%;}
+	20% {top: 500px; left: 50%;}
+	100% {left: 110%}
+}
